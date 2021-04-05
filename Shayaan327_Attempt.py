@@ -1,16 +1,21 @@
 def q1():
 	print("hello" * 5)
+	# "hellohellohellohellohello"
 
 def q2():
 	x, y = 4, 5
 	y, x = x, y
 	print(x)
 	print(y)
-
+	"""
+	5
+	4
+	"""
 def q3():
 	z = 9
 	lst = [0] * z
 	print(lst[:-1])
+	# 0
 
 def q4():
 	def help(x):
@@ -18,7 +23,8 @@ def q4():
 
 	lst = [i**2 for i in range(10)] 
 	lst = filter(help, lst) 
-	print(list(lst)[::2]) 
+	print(list(lst)[::2])
+	# I don't know this one, I'm not gonna answer
 
 def q5():
 	z = 0
@@ -30,6 +36,7 @@ def q5():
 			print(z)
 	else:
 		print('end')
+	# SyntaxError
 
 def q6():
 	import math
@@ -56,6 +63,13 @@ def q7():
 	print(b is a)
 	print(a is a)
 	print(a == a)
+	"""
+	True
+	True
+	True
+	True
+	True
+	"""
 
 def q8():
 	class A:
@@ -82,6 +96,7 @@ def q8():
 	d.print()
 	e.print()
 	g.print()
+	# I don't understand this one either
 
 def q9():
 	def x(z):
@@ -94,6 +109,7 @@ def q9():
 	for i in range(10):
 		func = x(i)
 		func(i, i-1)
+	# I hate nested functions, too confusing
 
 def q10():
 	def d(f):
@@ -109,19 +125,23 @@ def q10():
 		return x + 1
 
 	print(a(5))
+	# What even is the '@' symbol for?
 
 def q11():
 	print(*list(map(lambda x: chr(ord(x) + 1), ["a", "b", "c"])))
+	# I don't know lambda syntax
 
 
 def q12():
 	x = 0.1
 	y = 0.10000000000000001
 	print(x == y)
+	# False
 
 def q13():
 	x = [True, 1, "a", "b", "2"]
 	print(any(x)) 
+	# True
 
 def q14():
 	x = ["a", 1, 2, 3, 4]
@@ -132,19 +152,27 @@ def q14():
 	print(x)
 	print(y)
 	print(z)
+	"""
+	["a", 1, 9, 3, 4]
+	["a", 1, 2, 2, 4]
+	["a", 7, 2, 3, 4]
+	"""
 
 def q15():
 	print(1 == True)
 	print("1" == 1)
+	# TypeError
 
 def q16():
 	x = b'1001'
 	y = b'1010'
 	z = x + y
 	print(z)
+	# I don't know what b'' is
 
 def q17():
 	x = 0b1001
 	y = 0b1010
 	z = x + y
 	print(z)
+	# 0b10011
